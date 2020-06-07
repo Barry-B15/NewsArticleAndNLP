@@ -1,0 +1,10 @@
+// using variables is a special feature os sass
+$footer-color: antiquewhite;
+$secondary-color: #9e9e9e;
+$special-padding: 10px auto;
+footer {
+    background: $secondary-color;
+    color: $footer-color;
+    text-align: center;
+    padding: $special-padding;
+}

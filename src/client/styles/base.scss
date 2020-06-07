@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/*
+mesage-shared is a way to tell html elements to behave the same way as whatever is defined in the %message-shared.
+here is a simple way of add the same border. Just practicing to use this sass feature. The header and footer below are mine
+*/
+
+%message-shared {
+    border: 1px solid gold;
+}
+
+main {
+    flex: 2;
+    @extend %message-shared;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+footer {
+    @extend %message-shared;
+}
